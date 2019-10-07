@@ -1,0 +1,238 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 2 4
+Title "USB-UART Converter"
+Date "2019-10-06"
+Rev "0"
+Comp "G. Keeth"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_USB:FT230XS U?
+U 1 1 5DA0F47B
+P 5800 3750
+AR Path="/5DA0F47B" Ref="U?"  Part="1" 
+AR Path="/5DA09855/5DA0F47B" Ref="U3"  Part="1" 
+F 0 "U3" H 6300 3150 50  0000 C CNN
+F 1 "FT230XS" H 6200 3050 50  0000 C CNN
+F 2 "Package_SO:SSOP-16_3.9x4.9mm_P0.635mm" H 6250 3100 50  0001 C CNN
+F 3 "http://www.ftdichip.com/Products/ICs/FT230X.html" H 5800 3750 50  0001 C CNN
+	1    5800 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3650 5100 3650
+Wire Wire Line
+	5100 3750 3900 3750
+Wire Wire Line
+	3900 1900 4400 1900
+Wire Wire Line
+	5700 1900 5700 3050
+Wire Wire Line
+	5100 3350 5050 3350
+Wire Wire Line
+	5050 3350 5050 2500
+Wire Wire Line
+	5050 2500 5900 2500
+Wire Wire Line
+	5900 2500 5900 3050
+Wire Wire Line
+	6500 3350 6950 3350
+Wire Wire Line
+	6500 3450 6950 3450
+Wire Wire Line
+	6500 3550 6950 3550
+Wire Wire Line
+	6500 3650 6950 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5DA0F48D
+P 5700 4550
+AR Path="/5DA0F48D" Ref="#PWR?"  Part="1" 
+AR Path="/5DA09855/5DA0F48D" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 5700 4300 50  0001 C CNN
+F 1 "GND" H 5705 4377 50  0000 C CNN
+F 2 "" H 5700 4550 50  0001 C CNN
+F 3 "" H 5700 4550 50  0001 C CNN
+	1    5700 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4450 5700 4500
+Wire Wire Line
+	5900 4450 5900 4500
+Wire Wire Line
+	5900 4500 5700 4500
+Connection ~ 5700 4500
+Wire Wire Line
+	5700 4500 5700 4550
+Wire Wire Line
+	5100 3950 4950 3950
+Wire Wire Line
+	4950 3950 4950 1900
+Wire Wire Line
+	4950 1900 5700 1900
+$Comp
+L Device:C C?
+U 1 1 5DA0F49C
+P 4400 2150
+AR Path="/5DA0F49C" Ref="C?"  Part="1" 
+AR Path="/5DA09855/5DA0F49C" Ref="C12"  Part="1" 
+F 0 "C12" H 4285 2104 50  0000 R CNN
+F 1 "10n" H 4285 2195 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 2000 50  0001 C CNN
+F 3 "~" H 4400 2150 50  0001 C CNN
+	1    4400 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA0F4A8
+P 6500 3000
+AR Path="/5DA0F4A8" Ref="#PWR?"  Part="1" 
+AR Path="/5DA09855/5DA0F4A8" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 6500 2750 50  0001 C CNN
+F 1 "GND" H 6505 2827 50  0000 C CNN
+F 2 "" H 6500 3000 50  0001 C CNN
+F 3 "" H 6500 3000 50  0001 C CNN
+	1    6500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA0F4AE
+P 4400 2400
+AR Path="/5DA0F4AE" Ref="#PWR?"  Part="1" 
+AR Path="/5DA09855/5DA0F4AE" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 4400 2150 50  0001 C CNN
+F 1 "GND" H 4405 2227 50  0000 C CNN
+F 2 "" H 4400 2400 50  0001 C CNN
+F 3 "" H 4400 2400 50  0001 C CNN
+	1    4400 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2000 4400 1900
+Connection ~ 4400 1900
+Wire Wire Line
+	4400 1900 4950 1900
+Wire Wire Line
+	4400 2400 4400 2300
+Wire Wire Line
+	6500 3000 6500 2950
+Text HLabel 3900 3650 0    50   BiDi ~ 0
+USB_DM
+Text HLabel 3900 3750 0    50   BiDi ~ 0
+USB_DP
+Text HLabel 3900 1900 0    50   Input ~ 0
+USB_VBUS
+Text HLabel 6950 3350 2    50   Output ~ 0
+UART_TXD
+Text HLabel 6950 3450 2    50   Input ~ 0
+UART_RXD
+Text HLabel 6950 3550 2    50   Output ~ 0
+UART_RTS
+Text HLabel 6950 3650 2    50   Input ~ 0
+UART_CTS
+Wire Wire Line
+	7950 3950 6500 3950
+Wire Wire Line
+	6500 4050 8200 4050
+$Comp
+L Device:LED D?
+U 1 1 5DE31F30
+P 8200 2750
+AR Path="/5DE31F30" Ref="D?"  Part="1" 
+AR Path="/5DA09855/5DE31F30" Ref="D6"  Part="1" 
+F 0 "D6" V 8239 2633 50  0000 R CNN
+F 1 "TX (red)" V 8148 2633 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 8200 2750 50  0001 C CNN
+F 3 "~" H 8200 2750 50  0001 C CNN
+	1    8200 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DE31F2A
+P 7950 2750
+AR Path="/5DE31F2A" Ref="D?"  Part="1" 
+AR Path="/5DA09855/5DE31F2A" Ref="D5"  Part="1" 
+F 0 "D5" V 7989 2829 50  0000 L CNN
+F 1 "RX (green)" V 7898 2829 50  0000 L CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 7950 2750 50  0001 C CNN
+F 3 "~" H 7950 2750 50  0001 C CNN
+	1    7950 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DE3B67B
+P 7950 3200
+AR Path="/5DE3B67B" Ref="R?"  Part="1" 
+AR Path="/5DA09855/5DE3B67B" Ref="R10"  Part="1" 
+F 0 "R10" H 8019 3154 50  0000 L CNN
+F 1 "330" H 8019 3245 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7880 3200 50  0001 C CNN
+F 3 "~" H 7950 3200 50  0001 C CNN
+	1    7950 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DE3BB9C
+P 8200 3200
+AR Path="/5DE3BB9C" Ref="R?"  Part="1" 
+AR Path="/5DA09855/5DE3BB9C" Ref="R11"  Part="1" 
+F 0 "R11" H 8130 3154 50  0000 R CNN
+F 1 "330" H 8130 3245 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8130 3200 50  0001 C CNN
+F 3 "~" H 8200 3200 50  0001 C CNN
+	1    8200 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7950 2900 7950 3050
+Wire Wire Line
+	8200 2900 8200 3050
+Wire Wire Line
+	7950 3350 7950 3950
+Wire Wire Line
+	8200 4050 8200 3350
+NoConn ~ 6500 3850
+$Comp
+L Device:C C?
+U 1 1 5DA0F4A2
+P 6500 2800
+AR Path="/5DA0F4A2" Ref="C?"  Part="1" 
+AR Path="/5DA09855/5DA0F4A2" Ref="C13"  Part="1" 
+F 0 "C13" H 6385 2754 50  0000 R CNN
+F 1 "100n" H 6385 2845 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6538 2650 50  0001 C CNN
+F 3 "~" H 6500 2800 50  0001 C CNN
+	1    6500 2800
+	-1   0    0    1   
+$EndComp
+Connection ~ 4950 1900
+Wire Wire Line
+	5900 2500 6500 2500
+Wire Wire Line
+	6500 2500 6500 2650
+Connection ~ 5900 2500
+Wire Wire Line
+	6500 2500 7950 2500
+Wire Wire Line
+	8200 2500 8200 2600
+Connection ~ 6500 2500
+Wire Wire Line
+	7950 2600 7950 2500
+Connection ~ 7950 2500
+Wire Wire Line
+	7950 2500 8200 2500
+NoConn ~ 6500 4150
+$EndSCHEMATC
