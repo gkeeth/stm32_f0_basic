@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:stm32_f0_basic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
@@ -30,8 +31,6 @@ Wire Wire Line
 	3900 3650 5100 3650
 Wire Wire Line
 	5100 3750 3900 3750
-Wire Wire Line
-	3900 1900 4400 1900
 Wire Wire Line
 	5700 1900 5700 3050
 Wire Wire Line
@@ -79,19 +78,6 @@ Wire Wire Line
 Wire Wire Line
 	4950 1900 5700 1900
 $Comp
-L Device:C C?
-U 1 1 5DA0F49C
-P 4400 2150
-AR Path="/5DA0F49C" Ref="C?"  Part="1" 
-AR Path="/5DA09855/5DA0F49C" Ref="C12"  Part="1" 
-F 0 "C12" H 4285 2104 50  0000 R CNN
-F 1 "10n" H 4285 2195 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 2000 50  0001 C CNN
-F 3 "~" H 4400 2150 50  0001 C CNN
-	1    4400 2150
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5DA0F4A8
 P 6500 3000
@@ -104,33 +90,13 @@ F 3 "" H 6500 3000 50  0001 C CNN
 	1    6500 3000
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DA0F4AE
-P 4400 2400
-AR Path="/5DA0F4AE" Ref="#PWR?"  Part="1" 
-AR Path="/5DA09855/5DA0F4AE" Ref="#PWR0119"  Part="1" 
-F 0 "#PWR0119" H 4400 2150 50  0001 C CNN
-F 1 "GND" H 4405 2227 50  0000 C CNN
-F 2 "" H 4400 2400 50  0001 C CNN
-F 3 "" H 4400 2400 50  0001 C CNN
-	1    4400 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 2000 4400 1900
-Connection ~ 4400 1900
-Wire Wire Line
-	4400 1900 4950 1900
-Wire Wire Line
-	4400 2400 4400 2300
 Wire Wire Line
 	6500 3000 6500 2950
 Text HLabel 3900 3650 0    50   BiDi ~ 0
 USB_DM
 Text HLabel 3900 3750 0    50   BiDi ~ 0
 USB_DP
-Text HLabel 3900 1900 0    50   Input ~ 0
+Text HLabel 3350 1900 0    50   Input ~ 0
 USB_VBUS
 Text HLabel 6950 3350 2    50   Output ~ 0
 UART_TXD
@@ -218,7 +184,6 @@ F 3 "~" H 6500 2800 50  0001 C CNN
 	1    6500 2800
 	-1   0    0    1   
 $EndComp
-Connection ~ 4950 1900
 Wire Wire Line
 	5900 2500 6500 2500
 Wire Wire Line
@@ -235,4 +200,71 @@ Connection ~ 7950 2500
 Wire Wire Line
 	7950 2500 8200 2500
 NoConn ~ 6500 4150
+$Comp
+L Device:C C15
+U 1 1 5D9B0294
+P 4600 2150
+F 0 "C15" H 4715 2196 50  0000 L CNN
+F 1 "4.7u" H 4715 2105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4638 2000 50  0001 C CNN
+F 3 "~" H 4600 2150 50  0001 C CNN
+	1    4600 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D9B04A7
+P 4150 2150
+AR Path="/5D9B04A7" Ref="C?"  Part="1" 
+AR Path="/5DA09855/5D9B04A7" Ref="C14"  Part="1" 
+F 0 "C14" H 4035 2104 50  0000 R CNN
+F 1 "100n" H 4035 2195 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4188 2000 50  0001 C CNN
+F 3 "~" H 4150 2150 50  0001 C CNN
+	1    4150 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D9B0B01
+P 4600 2400
+AR Path="/5D9B0B01" Ref="#PWR?"  Part="1" 
+AR Path="/5DA09855/5D9B0B01" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 4600 2150 50  0001 C CNN
+F 1 "GND" H 4605 2227 50  0000 C CNN
+F 2 "" H 4600 2400 50  0001 C CNN
+F 3 "" H 4600 2400 50  0001 C CNN
+	1    4600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D9B0D98
+P 4150 2400
+AR Path="/5D9B0D98" Ref="#PWR?"  Part="1" 
+AR Path="/5DA09855/5D9B0D98" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 4150 2150 50  0001 C CNN
+F 1 "GND" H 4155 2227 50  0000 C CNN
+F 2 "" H 4150 2400 50  0001 C CNN
+F 3 "" H 4150 2400 50  0001 C CNN
+	1    4150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2400 4150 2300
+Wire Wire Line
+	4600 2300 4600 2400
+Connection ~ 4950 1900
+Wire Wire Line
+	4600 2000 4600 1900
+Connection ~ 4600 1900
+Wire Wire Line
+	4600 1900 4950 1900
+Wire Wire Line
+	4150 2000 4150 1900
+Connection ~ 4150 1900
+Wire Wire Line
+	4150 1900 4600 1900
+Wire Wire Line
+	3350 1900 4150 1900
 $EndSCHEMATC
