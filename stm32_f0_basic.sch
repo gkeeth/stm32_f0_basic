@@ -510,8 +510,6 @@ $EndComp
 Wire Wire Line
 	6600 4700 6600 4300
 Wire Wire Line
-	6600 4300 6850 4300
-Wire Wire Line
 	6600 4300 6600 3300
 Wire Wire Line
 	6600 3300 6950 3300
@@ -577,7 +575,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 4300 6000 4300
 Wire Wire Line
-	6000 4300 6000 5100
+	6000 4300 6000 4600
 Wire Wire Line
 	6000 5100 4850 5100
 Wire Wire Line
@@ -646,13 +644,6 @@ Wire Wire Line
 	9400 1150 10300 1150
 Wire Wire Line
 	5650 4200 6750 4200
-Wire Wire Line
-	8000 4600 6850 4600
-Wire Wire Line
-	6850 4600 6850 4300
-Connection ~ 6850 4300
-Wire Wire Line
-	6850 4300 6950 4300
 Wire Wire Line
 	6750 4200 6750 4700
 Wire Wire Line
@@ -894,7 +885,7 @@ U 1 1 5DE460F7
 P 1350 6750
 F 0 "H3" H 1450 6753 50  0000 L CNN
 F 1 "MountingHole_Pad" H 1450 6708 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1350 6750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 1350 6750 50  0001 C CNN
 F 3 "~" H 1350 6750 50  0001 C CNN
 	1    1350 6750
 	1    0    0    -1  
@@ -905,7 +896,7 @@ U 1 1 5DE46886
 P 900 6750
 F 0 "H1" H 1000 6753 50  0000 L CNN
 F 1 "MountingHole_Pad" H 1000 6708 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 900 6750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 900 6750 50  0001 C CNN
 F 3 "~" H 900 6750 50  0001 C CNN
 	1    900  6750
 	1    0    0    -1  
@@ -916,7 +907,7 @@ U 1 1 5DE46A4E
 P 900 7300
 F 0 "H2" H 1000 7303 50  0000 L CNN
 F 1 "MountingHole_Pad" H 1000 7258 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 900 7300 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 900 7300 50  0001 C CNN
 F 3 "~" H 900 7300 50  0001 C CNN
 	1    900  7300
 	1    0    0    -1  
@@ -927,7 +918,7 @@ U 1 1 5DE46D5C
 P 1350 7300
 F 0 "H4" H 1450 7303 50  0000 L CNN
 F 1 "MountingHole_Pad" H 1450 7258 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1350 7300 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 1350 7300 50  0001 C CNN
 F 3 "~" H 1350 7300 50  0001 C CNN
 	1    1350 7300
 	1    0    0    -1  
@@ -1033,7 +1024,7 @@ U 1 1 5D9EE8D3
 P 6250 1050
 F 0 "FB1" V 5976 1050 50  0000 C CNN
 F 1 "Ferrite_Bead" V 6067 1050 50  0000 C CNN
-F 2 "" V 6180 1050 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 6180 1050 50  0001 C CNN
 F 3 "~" H 6250 1050 50  0001 C CNN
 	1    6250 1050
 	0    1    1    0   
@@ -1045,4 +1036,11 @@ Wire Wire Line
 Connection ~ 7200 1050
 Wire Wire Line
 	6650 1050 6400 1050
+Wire Wire Line
+	6600 4300 6950 4300
+Wire Wire Line
+	6000 4600 8000 4600
+Connection ~ 6000 4600
+Wire Wire Line
+	6000 4600 6000 5100
 $EndSCHEMATC
