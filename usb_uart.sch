@@ -88,10 +88,10 @@ F 3 "" H 5300 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5300 2900 5300 2850
-Text HLabel 3500 3650 0    50   BiDi ~ 0
-USB_DM
-Text HLabel 3500 3750 0    50   BiDi ~ 0
-USB_DP
+Text HLabel 3100 3650 0    50   BiDi ~ 0
+USB_D-
+Text HLabel 3100 3750 0    50   BiDi ~ 0
+USB_D+
 Text HLabel 3350 1900 0    50   Input ~ 0
 USB_VBUS
 Text HLabel 6950 3350 2    50   Output ~ 0
@@ -286,7 +286,7 @@ F 3 "~" H 4500 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 3650 3700 3650
+	3100 3650 3700 3650
 $Comp
 L power:GND #PWR?
 U 1 1 5DA872F9
@@ -329,8 +329,8 @@ L power:GND #PWR?
 U 1 1 5DA8C7D7
 P 4200 4350
 AR Path="/5DA8C7D7" Ref="#PWR?"  Part="1" 
-AR Path="/5DA09855/5DA8C7D7" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4200 4100 50  0001 C CNN
+AR Path="/5DA09855/5DA8C7D7" Ref="#PWR0145"  Part="1" 
+F 0 "#PWR0145" H 4200 4100 50  0001 C CNN
 F 1 "GND" H 4205 4177 50  0000 C CNN
 F 2 "" H 4200 4350 50  0001 C CNN
 F 3 "" H 4200 4350 50  0001 C CNN
@@ -340,7 +340,7 @@ $EndComp
 Wire Wire Line
 	4200 4350 4200 4250
 Wire Wire Line
-	3500 3750 3700 3750
+	3100 3750 3700 3750
 Wire Wire Line
 	4000 3750 4500 3750
 Wire Wire Line
@@ -355,4 +355,8 @@ Wire Wire Line
 Connection ~ 4500 3750
 Wire Wire Line
 	4500 3750 5100 3750
+Text Label 4400 3650 0    50   ~ 0
+USBUART-
+Text Label 4400 3750 0    50   ~ 0
+USBUART+
 $EndSCHEMATC
