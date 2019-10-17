@@ -28,10 +28,6 @@ F 3 "http://www.ftdichip.com/Products/ICs/FT230X.html" H 5800 3750 50  0001 C CN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 3650 5100 3650
-Wire Wire Line
-	5100 3750 3900 3750
-Wire Wire Line
 	5700 1900 5700 3050
 Wire Wire Line
 	5100 3350 5050 3350
@@ -92,9 +88,9 @@ F 3 "" H 5300 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5300 2900 5300 2850
-Text HLabel 3900 3650 0    50   BiDi ~ 0
+Text HLabel 3500 3650 0    50   BiDi ~ 0
 USB_DM
-Text HLabel 3900 3750 0    50   BiDi ~ 0
+Text HLabel 3500 3750 0    50   BiDi ~ 0
 USB_DP
 Text HLabel 3350 1900 0    50   Input ~ 0
 USB_VBUS
@@ -267,4 +263,96 @@ Wire Wire Line
 	5300 2500 5900 2500
 Wire Wire Line
 	5900 2500 7950 2500
+$Comp
+L Device:R R12
+U 1 1 5DA82E9E
+P 3850 3650
+F 0 "R12" V 3643 3650 50  0000 C CNN
+F 1 "27" V 3734 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3780 3650 50  0001 C CNN
+F 3 "~" H 3850 3650 50  0001 C CNN
+	1    3850 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 5DA83367
+P 4500 4100
+F 0 "C17" H 4615 4146 50  0000 L CNN
+F 1 "47pF" H 4615 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4538 3950 50  0001 C CNN
+F 3 "~" H 4500 4100 50  0001 C CNN
+	1    4500 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3650 3700 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5DA872F9
+P 4500 4350
+AR Path="/5DA872F9" Ref="#PWR?"  Part="1" 
+AR Path="/5DA09855/5DA872F9" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 4500 4100 50  0001 C CNN
+F 1 "GND" H 4505 4177 50  0000 C CNN
+F 2 "" H 4500 4350 50  0001 C CNN
+F 3 "" H 4500 4350 50  0001 C CNN
+	1    4500 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4350 4500 4250
+$Comp
+L Device:R R13
+U 1 1 5DA8AE06
+P 3850 3750
+F 0 "R13" V 3965 3750 50  0000 C CNN
+F 1 "27" V 4056 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3780 3750 50  0001 C CNN
+F 3 "~" H 3850 3750 50  0001 C CNN
+	1    3850 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 5DA8AFDB
+P 4200 4100
+F 0 "C16" H 4086 4146 50  0000 R CNN
+F 1 "47pF" H 4086 4055 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4238 3950 50  0001 C CNN
+F 3 "~" H 4200 4100 50  0001 C CNN
+	1    4200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA8C7D7
+P 4200 4350
+AR Path="/5DA8C7D7" Ref="#PWR?"  Part="1" 
+AR Path="/5DA09855/5DA8C7D7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4200 4100 50  0001 C CNN
+F 1 "GND" H 4205 4177 50  0000 C CNN
+F 2 "" H 4200 4350 50  0001 C CNN
+F 3 "" H 4200 4350 50  0001 C CNN
+	1    4200 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4350 4200 4250
+Wire Wire Line
+	3500 3750 3700 3750
+Wire Wire Line
+	4000 3750 4500 3750
+Wire Wire Line
+	4000 3650 4200 3650
+Wire Wire Line
+	4200 3950 4200 3650
+Connection ~ 4200 3650
+Wire Wire Line
+	4200 3650 5100 3650
+Wire Wire Line
+	4500 3750 4500 3950
+Connection ~ 4500 3750
+Wire Wire Line
+	4500 3750 5100 3750
 $EndSCHEMATC
