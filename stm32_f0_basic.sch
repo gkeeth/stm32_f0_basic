@@ -1043,4 +1043,37 @@ Wire Wire Line
 Connection ~ 6000 4600
 Wire Wire Line
 	6000 4600 6000 5100
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 5DAD4F6B
+P 2650 7600
+F 0 "LOGO1" H 2650 7875 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 2650 7375 50  0001 C CNN
+F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 2650 7600 50  0001 C CNN
+F 3 "~" H 2650 7600 50  0001 C CNN
+	1    2650 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Creative_Commons:CC-BY-SA_0.33in LOGO2
+U 1 1 5DB446FD
+P 3700 7600
+F 0 "LOGO2" H 3700 7464 60  0001 C CNN
+F 1 "CC-BY-SA_0.33in" H 3700 7736 60  0001 C CNN
+F 2 "Symbol_CreativeCommons:CC-BY-SA_SilkScreenTop_Small" H 3700 7600 50  0001 C CNN
+F 3 "" H 3700 7600 50  0001 C CNN
+	1    3700 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic_gkeeth:Logo_MadeWithKiCad LOGO3
+U 1 1 5DB4D22C
+P 2650 8000
+F 0 "LOGO3" H 2650 8000 50  0001 C CNN
+F 1 "Logo_MadeWithKiCad" H 2650 8000 50  0001 C CNN
+F 2 "Symbol:KiCad-Logo2_5mm_SilkScreen" H 2650 8000 50  0001 C CNN
+F 3 "" H 2650 8000 50  0001 C CNN
+	1    2650 8000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
