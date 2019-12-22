@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:stm32_f0_basic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
@@ -21,7 +20,11 @@ P 5550 1250
 F 0 "J4" H 5607 1717 50  0000 C CNN
 F 1 "USB_B_Mini" H 5607 1626 50  0000 C CNN
 F 2 "Connector_USB:USB_Mini-B_Wuerth_65100516121_Horizontal" H 5700 1200 50  0001 C CNN
-F 3 "~" H 5700 1200 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Wurth%20Electronics%20PDFs/Communication%20Conn%20WR-COM.pdf" H 5700 1200 50  0001 C CNN
+F 4 "Mouser" H 5550 1250 50  0001 C CNN "Distributor"
+F 5 "710-65100516121" H 5550 1250 50  0001 C CNN "Distributor PN"
+F 6 "Wuerth" H 5550 1250 50  0001 C CNN "Manufacturer"
+F 7 "65100516121" H 5550 1250 50  0001 C CNN "Manufacturer PN"
 	1    5550 1250
 	1    0    0    -1  
 $EndComp
@@ -54,7 +57,11 @@ P 8150 4400
 F 0 "R6" V 8100 4200 50  0000 C CNN
 F 1 "0" V 8150 4400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 4400 50  0001 C CNN
-F 3 "~" H 8150 4400 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf" H 8150 4400 50  0001 C CNN
+F 4 "Digikey" H 8150 4400 50  0001 C CNN "Distributor"
+F 5 "311-0.0GRCT-ND" H 8150 4400 50  0001 C CNN "Distributor PN"
+F 6 "Yageo" H 8150 4400 50  0001 C CNN "Manufacturer"
+F 7 "RC0603JR-070RL" H 8150 4400 50  0001 C CNN "Manufacturer PN"
 	1    8150 4400
 	0    1    1    0   
 $EndComp
@@ -65,7 +72,11 @@ P 8150 4500
 F 0 "R7" V 8100 4300 50  0000 C CNN
 F 1 "0" V 8150 4500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 4500 50  0001 C CNN
-F 3 "~" H 8150 4500 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf" H 8150 4500 50  0001 C CNN
+F 4 "Digikey" H 8150 4500 50  0001 C CNN "Distributor"
+F 5 "311-0.0GRCT-ND" H 8150 4500 50  0001 C CNN "Distributor PN"
+F 6 "Yageo" H 8150 4500 50  0001 C CNN "Manufacturer"
+F 7 "RC0603JR-070RL" H 8150 4500 50  0001 C CNN "Manufacturer PN"
 	1    8150 4500
 	0    1    1    0   
 $EndComp
@@ -76,7 +87,11 @@ P 8150 4700
 F 0 "R9" V 8100 4500 50  0000 C CNN
 F 1 "0" V 8150 4700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 4700 50  0001 C CNN
-F 3 "~" H 8150 4700 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf" H 8150 4700 50  0001 C CNN
+F 4 "Digikey" H 8150 4700 50  0001 C CNN "Distributor"
+F 5 "311-0.0GRCT-ND" H 8150 4700 50  0001 C CNN "Distributor PN"
+F 6 "Yageo" H 8150 4700 50  0001 C CNN "Manufacturer"
+F 7 "RC0603JR-070RL" H 8150 4700 50  0001 C CNN "Manufacturer PN"
 	1    8150 4700
 	0    1    1    0   
 $EndComp
@@ -139,7 +154,11 @@ P 3600 5650
 F 0 "D3" V 3639 5533 50  0000 R CNN
 F 1 "blue" V 3548 5533 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 3600 5650 50  0001 C CNN
-F 3 "~" H 3600 5650 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-230/LTST-C191TBKT.pdf" H 3600 5650 50  0001 C CNN
+F 4 "Digikey" H 3600 5650 50  0001 C CNN "Distributor"
+F 5 "160-1647-1-ND" H 3600 5650 50  0001 C CNN "Distributor PN"
+F 6 "Lite-On" H 3600 5650 50  0001 C CNN "Manufacturer"
+F 7 "LTST-C191TBKT" H 3600 5650 50  0001 C CNN "Manufacturer PN"
 	1    3600 5650
 	0    -1   -1   0   
 $EndComp
@@ -150,7 +169,11 @@ P 3350 5650
 F 0 "D2" V 3389 5729 50  0000 L CNN
 F 1 "green" V 3298 5729 50  0000 L CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 3350 5650 50  0001 C CNN
-F 3 "~" H 3350 5650 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-228/LTST-C191KGKT.PDF" H 3350 5650 50  0001 C CNN
+F 4 "Digikey" H 3350 5650 50  0001 C CNN "Distributor"
+F 5 "160-1446-1-ND" H 3350 5650 50  0001 C CNN "Distributor PN"
+F 6 "Lite-On" H 3350 5650 50  0001 C CNN "Manufacturer"
+F 7 "LTST-C191KGKT" H 3350 5650 50  0001 C CNN "Manufacturer PN"
 	1    3350 5650
 	0    -1   -1   0   
 $EndComp
@@ -159,9 +182,13 @@ L Device:R R3
 U 1 1 5DA420D0
 P 3600 6050
 F 0 "R3" H 3530 6004 50  0000 R CNN
-F 1 "660" H 3530 6095 50  0000 R CNN
+F 1 "680" H 3530 6095 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3530 6050 50  0001 C CNN
-F 3 "~" H 3600 6050 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_11.pdf" H 3600 6050 50  0001 C CNN
+F 4 "Digikey" H 3600 6050 50  0001 C CNN "Distributor"
+F 5 "311-2648-1-ND" H 3600 6050 50  0001 C CNN "Distributor PN"
+F 6 "Yageo" H 3600 6050 50  0001 C CNN "Manufacturer"
+F 7 "RT0603DRE07680RL" H 3600 6050 50  0001 C CNN "Manufacturer PN"
 	1    3600 6050
 	-1   0    0    1   
 $EndComp
@@ -172,7 +199,11 @@ P 3350 6050
 F 0 "R2" H 3419 6004 50  0000 L CNN
 F 1 "330" H 3419 6095 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3280 6050 50  0001 C CNN
-F 3 "~" H 3350 6050 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_11.pdf" H 3350 6050 50  0001 C CNN
+F 4 "Digikey" H 3350 6050 50  0001 C CNN "Distributor"
+F 5 "311-2540-1-ND" H 3350 6050 50  0001 C CNN "Distributor PN"
+F 6 "Yageo" H 3350 6050 50  0001 C CNN "Manufacturer"
+F 7 "RT0603DRE07330RL" H 3350 6050 50  0001 C CNN "Manufacturer PN"
 	1    3350 6050
 	-1   0    0    1   
 $EndComp
@@ -230,7 +261,11 @@ AR Path="/5DA254F3/5DA44F8B" Ref="C?"  Part="1"
 F 0 "C8" V 3610 1700 50  0000 C CNN
 F 1 "100n" V 3701 1700 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3488 1550 50  0001 C CNN
-F 3 "~" H 3450 1700 50  0001 C CNN
+F 3 "https://psearch.en.murata.com/capacitor/product/GCM21BR72A104KA37%23.pdf" H 3450 1700 50  0001 C CNN
+F 4 "Digikey" H 3450 1700 50  0001 C CNN "Distributor"
+F 5 "490-8051-1-ND" H 3450 1700 50  0001 C CNN "Distributor PN"
+F 6 "Murata" H 3450 1700 50  0001 C CNN "Manufacturer"
+F 7 "GCM21BR72A104KA37K" H 3450 1700 50  0001 C CNN "Manufacturer PN"
 	1    3450 1700
 	0    1    1    0   
 $EndComp
@@ -268,7 +303,11 @@ AR Path="/5DA254F3/5DA4FA4C" Ref="C?"  Part="1"
 F 0 "C9" V 2210 5150 50  0000 C CNN
 F 1 "100n" V 2301 5150 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2088 5000 50  0001 C CNN
-F 3 "~" H 2050 5150 50  0001 C CNN
+F 3 "https://psearch.en.murata.com/capacitor/product/GCM21BR72A104KA37%23.pdf" H 2050 5150 50  0001 C CNN
+F 4 "Digikey" H 2050 5150 50  0001 C CNN "Distributor"
+F 5 "490-8051-1-ND" H 2050 5150 50  0001 C CNN "Distributor PN"
+F 6 "Murata" H 2050 5150 50  0001 C CNN "Manufacturer"
+F 7 "GCM21BR72A104KA37K" H 2050 5150 50  0001 C CNN "Manufacturer PN"
 	1    2050 5150
 	0    1    1    0   
 $EndComp
@@ -287,7 +326,11 @@ AR Path="/5DA254F3/5DA4FA62" Ref="R?"  Part="1"
 F 0 "R5" V 2957 4950 50  0000 C CNN
 F 1 "0" V 2866 4950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 4950 50  0001 C CNN
-F 3 "~" H 2750 4950 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf" H 2750 4950 50  0001 C CNN
+F 4 "Digikey" H 2750 4950 50  0001 C CNN "Distributor"
+F 5 "311-0.0GRCT-ND" H 2750 4950 50  0001 C CNN "Distributor PN"
+F 6 "Yageo" H 2750 4950 50  0001 C CNN "Manufacturer"
+F 7 "RC0603JR-070RL" H 2750 4950 50  0001 C CNN "Manufacturer PN"
 	1    2750 4950
 	0    -1   -1   0   
 $EndComp
@@ -363,7 +406,11 @@ AR Path="/5DA254F3/5DA6154C" Ref="D?"  Part="1"
 F 0 "D1" V 1089 1282 50  0000 R CNN
 F 1 "red" V 998 1282 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 1050 1400 50  0001 C CNN
-F 3 "~" H 1050 1400 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-223/LTST-C191KRKT.PDF" H 1050 1400 50  0001 C CNN
+F 4 "Digikey" H 1050 1400 50  0001 C CNN "Distributor"
+F 5 "160-1447-1-ND" H 1050 1400 50  0001 C CNN "Distributor PN"
+F 6 "Lite-On" H 1050 1400 50  0001 C CNN "Manufacturer"
+F 7 "LTST-C191KRKT" H 1050 1400 50  0001 C CNN "Manufacturer PN"
 	1    1050 1400
 	0    -1   -1   0   
 $EndComp
@@ -376,7 +423,11 @@ AR Path="/5DA254F3/5DA61552" Ref="R?"  Part="1"
 F 0 "R1" H 980 1754 50  0000 R CNN
 F 1 "1k" H 980 1845 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 980 1800 50  0001 C CNN
-F 3 "~" H 1050 1800 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_11.pdf" H 1050 1800 50  0001 C CNN
+F 4 "Digikey" H 1050 1800 50  0001 C CNN "Distributor"
+F 5 "YAG2323CT-ND" H 1050 1800 50  0001 C CNN "Distributor PN"
+F 6 "Yageo" H 1050 1800 50  0001 C CNN "Manufacturer"
+F 7 "RT0603FRE071KL" H 1050 1800 50  0001 C CNN "Manufacturer PN"
 	1    1050 1800
 	-1   0    0    1   
 $EndComp
@@ -689,7 +740,11 @@ P 8150 4600
 F 0 "R8" V 8100 4400 50  0000 C CNN
 F 1 "0" V 8150 4600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 4600 50  0001 C CNN
-F 3 "~" H 8150 4600 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf" H 8150 4600 50  0001 C CNN
+F 4 "Digikey" H 8150 4600 50  0001 C CNN "Distributor"
+F 5 "311-0.0GRCT-ND" H 8150 4600 50  0001 C CNN "Distributor PN"
+F 6 "Yageo" H 8150 4600 50  0001 C CNN "Manufacturer"
+F 7 "RC0603JR-070RL" H 8150 4600 50  0001 C CNN "Manufacturer PN"
 	1    8150 4600
 	0    1    1    0   
 $EndComp
@@ -702,7 +757,11 @@ AR Path="/5DA254F3/5DA58C85" Ref="R?"  Part="1"
 F 0 "R4" V 1693 2850 50  0000 C CNN
 F 1 "10k" V 1784 2850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1830 2850 50  0001 C CNN
-F 3 "~" H 1900 2850 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_11.pdf" H 1900 2850 50  0001 C CNN
+F 4 "Digikey" H 1900 2850 50  0001 C CNN "Distributor"
+F 5 "YAG2321CT-ND" H 1900 2850 50  0001 C CNN "Distributor PN"
+F 6 "Yageo" H 1900 2850 50  0001 C CNN "Manufacturer"
+F 7 "RT0603FRE0710KL" H 1900 2850 50  0001 C CNN "Manufacturer PN"
 	1    1900 2850
 	0    1    1    0   
 $EndComp
@@ -716,6 +775,10 @@ F 0 "D4" H 6800 834 50  0000 C CNN
 F 1 "B140-E3" H 6800 925 50  0000 C CNN
 F 2 "Diode_SMD:D_SMA" H 6800 875 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88946/b120.pdf" H 6800 1050 50  0001 C CNN
+F 4 "Digikey" H 6800 1050 50  0001 C CNN "Distributor"
+F 5 "B140-E3/61TGICT-ND" H 6800 1050 50  0001 C CNN "Distributor PN"
+F 6 "Vishay" H 6800 1050 50  0001 C CNN "Manufacturer"
+F 7 "B140-E3/61T" H 6800 1050 50  0001 C CNN "Manufacturer PN"
 	1    6800 1050
 	-1   0    0    1   
 $EndComp
@@ -726,7 +789,11 @@ P 9050 5700
 F 0 "J5" H 8606 5746 50  0000 R CNN
 F 1 "Conn_ARM_JTAG_SWD_10" H 8606 5655 50  0000 R CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 9050 5700 50  0001 C CNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 8700 4450 50  0001 C CNN
+F 3 "http://suddendocs.samtec.com/catalog_english/ftsh_smt.pdf" V 8700 4450 50  0001 C CNN
+F 4 "Digikey" H 9050 5700 50  0001 C CNN "Distributor"
+F 5 "SAM13160CT-ND" H 9050 5700 50  0001 C CNN "Distributor PN"
+F 6 "Samtec" H 9050 5700 50  0001 C CNN "Manufacturer"
+F 7 "FTSH-105-01-F-DV-K-TR" H 9050 5700 50  0001 C CNN "Manufacturer PN"
 	1    9050 5700
 	-1   0    0    -1  
 $EndComp
@@ -822,9 +889,11 @@ P 3450 1500
 F 0 "SW1" H 3450 1785 50  0000 C CNN
 F 1 "B3S-1000P" H 3450 1694 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 3450 1700 50  0001 C CNN
-F 3 "~" H 3450 1700 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3s.pdf" H 3450 1700 50  0001 C CNN
 F 4 "Omron" H 3450 1500 50  0001 C CNN "Manufacturer"
 F 5 "B3S-1000P" H 3450 1500 50  0001 C CNN "Manufacturer PN"
+F 6 "Digikey" H 3450 1500 50  0001 C CNN "Distributor"
+F 7 "SW836CT-ND" H 3450 1500 50  0001 C CNN "Distributor PN"
 	1    3450 1500
 	1    0    0    -1  
 $EndComp
@@ -835,9 +904,11 @@ P 2050 4950
 F 0 "SW2" H 2050 5235 50  0000 C CNN
 F 1 "B3S-1000P" H 2050 5144 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 2050 5150 50  0001 C CNN
-F 3 "~" H 2050 5150 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3s.pdf" H 2050 5150 50  0001 C CNN
 F 4 "Omron" H 2050 4950 50  0001 C CNN "Manufacturer"
 F 5 "B3S-1000P" H 2050 4950 50  0001 C CNN "Manufacturer PN"
+F 6 "Digikey" H 2050 4950 50  0001 C CNN "Distributor"
+F 7 "SW836CT-ND" H 2050 4950 50  0001 C CNN "Distributor PN"
 	1    2050 4950
 	1    0    0    -1  
 $EndComp
@@ -996,7 +1067,11 @@ AR Path="/5DA09855/5D9D542D" Ref="C?"  Part="1"
 F 0 "C12" H 5885 1654 50  0000 R CNN
 F 1 "10n" H 5885 1745 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6038 1550 50  0001 C CNN
-F 3 "~" H 6000 1700 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us" H 6000 1700 50  0001 C CNN
+F 4 "Digikey" H 6000 1700 50  0001 C CNN "Distributor"
+F 5 "490-9666-1-ND" H 6000 1700 50  0001 C CNN "Distributor PN"
+F 6 "Murata" H 6000 1700 50  0001 C CNN "Manufacturer"
+F 7 "GRM1885C1H103JA01D" H 6000 1700 50  0001 C CNN "Manufacturer PN"
 	1    6000 1700
 	-1   0    0    1   
 $EndComp
@@ -1025,7 +1100,11 @@ P 6250 1050
 F 0 "FB1" V 5976 1050 50  0000 C CNN
 F 1 "Ferrite_Bead" V 6067 1050 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 6180 1050 50  0001 C CNN
-F 3 "~" H 6250 1050 50  0001 C CNN
+F 3 "https://www.murata.com/en-us/products/productdata/8796738650142/ENFA0003.pdf" H 6250 1050 50  0001 C CNN
+F 4 "Digikey" H 6250 1050 50  0001 C CNN "Distributor"
+F 5 "490-5220-1-ND" H 6250 1050 50  0001 C CNN "Distributor PN"
+F 6 "Murata" H 6250 1050 50  0001 C CNN "Manufacturer"
+F 7 "BLM18PG330SN1D" H 6250 1050 50  0001 C CNN "Manufacturer PN"
 	1    6250 1050
 	0    1    1    0   
 $EndComp

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:stm32_f0_basic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -23,7 +22,11 @@ AR Path="/5DA254F3/5DA3C543" Ref="U1"  Part="1"
 F 0 "U1" H 6150 2800 50  0000 C CNN
 F 1 "STM32F031K6Tx" H 6150 2700 50  0000 C CNN
 F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 5300 2850 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00104043.pdf" H 5800 3750 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/4d/c2/7e/10/77/4f/4a/60/DM00104043.pdf/files/DM00104043.pdf/jcr:content/translations/en.DM00104043.pdf" H 5800 3750 50  0001 C CNN
+F 4 "Digikey" H 5800 3750 50  0001 C CNN "Distributor"
+F 5 "497-17341-ND" H 5800 3750 50  0001 C CNN "Distributor PN"
+F 6 "STMicroelectronics" H 5800 3750 50  0001 C CNN "Manufacturer"
+F 7 "STM32F031K6T6" H 5800 3750 50  0001 C CNN "Manufacturer PN"
 	1    5800 3750
 	1    0    0    -1  
 $EndComp
@@ -36,7 +39,11 @@ AR Path="/5DA254F3/5DA3C549" Ref="C3"  Part="1"
 F 0 "C3" H 9215 5496 50  0000 L CNN
 F 1 "100n" H 9215 5405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9138 5300 50  0001 C CNN
-F 3 "~" H 9100 5450 50  0001 C CNN
+F 3 "https://psearch.en.murata.com/capacitor/product/GCM21BR72A104KA37%23.pdf" H 9100 5450 50  0001 C CNN
+F 4 "Digikey" H 9100 5450 50  0001 C CNN "Distributor"
+F 5 "490-8051-1-ND" H 9100 5450 50  0001 C CNN "Distributor PN"
+F 6 "Murata" H 9100 5450 50  0001 C CNN "Manufacturer"
+F 7 "GCM21BR72A104KA37K" H 9100 5450 50  0001 C CNN "Manufacturer PN"
 	1    9100 5450
 	1    0    0    -1  
 $EndComp
@@ -49,7 +56,11 @@ AR Path="/5DA254F3/5DA3C54F" Ref="C4"  Part="1"
 F 0 "C4" H 9665 5496 50  0000 L CNN
 F 1 "100n" H 9665 5405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9588 5300 50  0001 C CNN
-F 3 "~" H 9550 5450 50  0001 C CNN
+F 3 "https://psearch.en.murata.com/capacitor/product/GCM21BR72A104KA37%23.pdf" H 9550 5450 50  0001 C CNN
+F 4 "Digikey" H 9550 5450 50  0001 C CNN "Distributor"
+F 5 "490-8051-1-ND" H 9550 5450 50  0001 C CNN "Distributor PN"
+F 6 "Murata" H 9550 5450 50  0001 C CNN "Manufacturer"
+F 7 "GCM21BR72A104KA37K" H 9550 5450 50  0001 C CNN "Manufacturer PN"
 	1    9550 5450
 	1    0    0    -1  
 $EndComp
@@ -62,7 +73,11 @@ AR Path="/5DA254F3/5DA3C555" Ref="C1"  Part="1"
 F 0 "C1" H 7615 5496 50  0000 L CNN
 F 1 "10n" H 7615 5405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7538 5300 50  0001 C CNN
-F 3 "~" H 7500 5450 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us" H 7500 5450 50  0001 C CNN
+F 4 "Digikey" H 7500 5450 50  0001 C CNN "Distributor"
+F 5 "490-9666-1-ND" H 7500 5450 50  0001 C CNN "Distributor PN"
+F 6 "Murata" H 7500 5450 50  0001 C CNN "Manufacturer"
+F 7 "GRM1885C1H103JA01D" H 7500 5450 50  0001 C CNN "Manufacturer PN"
 	1    7500 5450
 	1    0    0    -1  
 $EndComp
@@ -75,7 +90,11 @@ AR Path="/5DA254F3/5DA3C55B" Ref="C5"  Part="1"
 F 0 "C5" H 10115 5496 50  0000 L CNN
 F 1 "4.7u" H 10115 5405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 10038 5300 50  0001 C CNN
-F 3 "~" H 10000 5450 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0805C475K4RACTU.pdf" H 10000 5450 50  0001 C CNN
+F 4 "Digikey" H 10000 5450 50  0001 C CNN "Distributor"
+F 5 "399-7415-1-ND" H 10000 5450 50  0001 C CNN "Distributor PN"
+F 6 "KEMET" H 10000 5450 50  0001 C CNN "Manufacturer"
+F 7 "C0805C475K4RACTU" H 10000 5450 50  0001 C CNN "Manufacturer PN"
 	1    10000 5450
 	1    0    0    -1  
 $EndComp
@@ -88,7 +107,11 @@ AR Path="/5DA254F3/5DA3C561" Ref="C2"  Part="1"
 F 0 "C2" H 8065 5496 50  0000 L CNN
 F 1 "1u" H 8065 5405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 7988 5300 50  0001 C CNN
-F 3 "~" H 7950 5450 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0805C105K3RACTU.pdf" H 7950 5450 50  0001 C CNN
+F 4 "KEMET" H 7950 5450 50  0001 C CNN "Manufacturer"
+F 5 "C0805C105K3RACTU" H 7950 5450 50  0001 C CNN "Manufacturer PN"
+F 6 "Digikey" H 7950 5450 50  0001 C CNN "Distributor"
+F 7 "399-8004-1-ND" H 7950 5450 50  0001 C CNN "Distributor PN"
 	1    7950 5450
 	1    0    0    -1  
 $EndComp
@@ -375,7 +398,11 @@ P 3550 4000
 F 0 "Y1" H 3550 3732 50  0000 C CNN
 F 1 "8MHz" H 3550 3823 50  0000 C CNN
 F 2 "Crystal:Crystal_SMD_HC49-SD" H 3550 4000 50  0001 C CNN
-F 3 "~" H 3550 4000 50  0001 C CNN
+F 3 "http://www.txccrystal.com/images/pdf/9c-accuracy.pdf" H 3550 4000 50  0001 C CNN
+F 4 "TXC" H 3550 4000 50  0001 C CNN "Manufacturer"
+F 5 "9C-8.000MEEJ-T" H 3550 4000 50  0001 C CNN "Manufacturer PN"
+F 6 "Digikey" H 3550 4000 50  0001 C CNN "Distributor"
+F 7 "887-1263-1-ND" H 3550 4000 50  0001 C CNN "Distributor PN"
 	1    3550 4000
 	-1   0    0    1   
 $EndComp
@@ -386,7 +413,11 @@ P 3250 4250
 F 0 "C6" H 3365 4296 50  0000 L CNN
 F 1 "27p" H 3365 4205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3288 4100 50  0001 C CNN
-F 3 "~" H 3250 4250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GP_NP0_16V-to-50V_18.pdf" H 3250 4250 50  0001 C CNN
+F 4 "Digikey" H 3250 4250 50  0001 C CNN "Distributor"
+F 5 "311-1063-1-ND" H 3250 4250 50  0001 C CNN "Distributor PN"
+F 6 "Yageo" H 3250 4250 50  0001 C CNN "Manufacturer"
+F 7 "CC0603JRNPO9BN270" H 3250 4250 50  0001 C CNN "Manufacturer PN"
 	1    3250 4250
 	1    0    0    -1  
 $EndComp
@@ -397,7 +428,11 @@ P 3850 4250
 F 0 "C7" H 3965 4296 50  0000 L CNN
 F 1 "27p" H 3965 4205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3888 4100 50  0001 C CNN
-F 3 "~" H 3850 4250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GP_NP0_16V-to-50V_18.pdf" H 3850 4250 50  0001 C CNN
+F 4 "Digikey" H 3850 4250 50  0001 C CNN "Distributor"
+F 5 "311-1063-1-ND" H 3850 4250 50  0001 C CNN "Distributor PN"
+F 6 "Yageo" H 3850 4250 50  0001 C CNN "Manufacturer"
+F 7 "CC0603JRNPO9BN270" H 3850 4250 50  0001 C CNN "Manufacturer PN"
 	1    3850 4250
 	1    0    0    -1  
 $EndComp

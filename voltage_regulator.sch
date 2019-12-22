@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:stm32_f0_basic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -44,6 +43,10 @@ F 0 "U2" H 3550 3442 50  0000 C CNN
 F 1 "ADP121-AUJZ33R7" H 3550 3351 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 3550 3425 50  0001 C CIN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADP121.pdf" H 3550 3200 50  0001 C CNN
+F 4 "Digikey" H 3550 3100 50  0001 C CNN "Distributor"
+F 5 "ADP121-AUJZ33R7CT-ND" H 3550 3100 50  0001 C CNN "Distributor PN"
+F 6 "Analog Devices" H 3550 3100 50  0001 C CNN "Manufacturer"
+F 7 "ADP121-AUJZ33R7" H 3550 3100 50  0001 C CNN "Manufacturer PN"
 	1    3550 3100
 	1    0    0    -1  
 $EndComp
@@ -54,7 +57,11 @@ P 2950 3250
 F 0 "C10" H 3065 3296 50  0000 L CNN
 F 1 "1u" H 3065 3205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2988 3100 50  0001 C CNN
-F 3 "~" H 2950 3250 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0805C105K3RACTU.pdf" H 2950 3250 50  0001 C CNN
+F 4 "KEMET" H 2950 3250 50  0001 C CNN "Manufacturer"
+F 5 "C0805C105K3RACTU" H 2950 3250 50  0001 C CNN "Manufacturer PN"
+F 6 "Digikey" H 2950 3250 50  0001 C CNN "Distributor"
+F 7 "399-8004-1-ND" H 2950 3250 50  0001 C CNN "Distributor PN"
 	1    2950 3250
 	1    0    0    -1  
 $EndComp
@@ -65,7 +72,11 @@ P 4150 3250
 F 0 "C11" H 4265 3296 50  0000 L CNN
 F 1 "1u" H 4265 3205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4188 3100 50  0001 C CNN
-F 3 "~" H 4150 3250 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0805C105K3RACTU.pdf" H 4150 3250 50  0001 C CNN
+F 4 "KEMET" H 4150 3250 50  0001 C CNN "Manufacturer"
+F 5 "C0805C105K3RACTU" H 4150 3250 50  0001 C CNN "Manufacturer PN"
+F 6 "Digikey" H 4150 3250 50  0001 C CNN "Distributor"
+F 7 "399-8004-1-ND" H 4150 3250 50  0001 C CNN "Distributor PN"
 	1    4150 3250
 	1    0    0    -1  
 $EndComp
