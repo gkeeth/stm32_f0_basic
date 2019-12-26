@@ -23,12 +23,12 @@ uint32_t millis(void) {
 }
 
 static void setup(void) {
-    // use internal HSI clock rather than external crystal
-    rcc_clock_setup_in_hsi_out_48mhz();
-    systick_set_clocksource(STK_CSR_CLKSOURCE_EXT);
-    STK_CVR = 0; // clear to start immediately
+    // use external 8MHz crystal to derive 48MHz clock from PLL
+    rcc_clock_setup_in_hse_8mhz_out_48mhz();
+    STK_CVR = 0; // clear systick current value to start immediately
 
-    systick_set_reload(rcc_ahb_frequency / 8 / 1000);
+    // every 1 ms (1000 Hz)
+    systick_set_frequency(1000, rcc_ahb_frequency);
     systick_counter_enable();
     systick_interrupt_enable();
 
@@ -76,7 +76,8 @@ int main(void) {
     int button_armed = 0;
     uint32_t blink_delays[] = {100, 500, 1000};
     uint32_t last_flash_millis;
-setup();
+
+    setup();
     last_flash_millis = millis();
 
     while(1) {
