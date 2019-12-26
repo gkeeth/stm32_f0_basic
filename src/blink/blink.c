@@ -35,8 +35,7 @@ static void setup(void) {
     // setup LED pins
     rcc_periph_clock_enable(RCC_GPIOB);
     // set LED pins to output push-pull
-    gpio_mode_setup(PORT_LED, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, PIN_LED0);
-    gpio_mode_setup(PORT_LED, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, PIN_LED1);
+    gpio_mode_setup(PORT_LED, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, PIN_LED0 | PIN_LED1);
 
     // setup button pin
     rcc_periph_clock_enable(RCC_GPIOA);
@@ -58,10 +57,8 @@ static void setup(void) {
     */
 
     // setup USART1
-    gpio_mode_setup(GPIOA, GPIO_MODE_AF, GPIO_PUPD_NONE, GPIO9); // Tx
-    gpio_mode_setup(GPIOA, GPIO_MODE_AF, GPIO_PUPD_NONE, GPIO10); // Rx
-    gpio_set_af(GPIOA, GPIO_AF1, GPIO9); // Tx
-    gpio_set_af(GPIOA, GPIO_AF1, GPIO10); // Rx
+    gpio_mode_setup(GPIOA, GPIO_MODE_AF, GPIO_PUPD_NONE, GPIO9 | GPIO10);
+    gpio_set_af(GPIOA, GPIO_AF1, GPIO9 | GPIO10);
     rcc_periph_clock_enable(RCC_USART1);
     usart_set_baudrate(USART1, 115200);
     usart_set_databits(USART1, 8);
@@ -79,8 +76,7 @@ int main(void) {
     int button_armed = 0;
     uint32_t blink_delays[] = {100, 500, 1000};
     uint32_t last_flash_millis;
-
-    setup();
+setup();
     last_flash_millis = millis();
 
     while(1) {
