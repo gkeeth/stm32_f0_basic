@@ -57,7 +57,7 @@ static void setup(void) {
     rcc_set_mco(RCC_CFGR_MCO_SYSCLK);
     */
 
-    // setup USART1 (transmit only)
+    // setup USART1
     gpio_mode_setup(GPIOA, GPIO_MODE_AF, GPIO_PUPD_NONE, GPIO9); // Tx
     gpio_mode_setup(GPIOA, GPIO_MODE_AF, GPIO_PUPD_NONE, GPIO10); // Rx
     gpio_set_af(GPIOA, GPIO_AF1, GPIO9); // Tx
@@ -76,6 +76,7 @@ static void setup(void) {
 
 int main(void) {
     int i = 0;
+    int button_armed = 0;
     uint32_t blink_delays[] = {100, 500, 1000};
     uint32_t last_flash_millis;
 
@@ -83,7 +84,10 @@ int main(void) {
     last_flash_millis = millis();
 
     while(1) {
-        if (!gpio_get(GPIOA, GPIO8)) {
+        int button_pressed = !gpio_get(GPIOA, GPIO8);
+        if (button_pressed && button_armed) {
+            // disarm button (until button is released)
+            button_armed = 0;
             // make LED blink faster
             i = (i + 1) % 3;
             // PA{0-2} high to represent blink speed
@@ -99,12 +103,18 @@ int main(void) {
                     gpio_set(GPIOA, GPIO2);
                     break;
             }
-
             // send current state over usart1
             usart_send_blocking(USART1, (char) (i + 48));
             usart_send_blocking(USART1, '\r');
             usart_send_blocking(USART1, '\n');
+        } else if (button_pressed && !button_armed) {
+            // do nothing
+        } else {
+            // button not pressed, button not armed
+            // re-arm button
+            button_armed = 1;
         }
+
 
         if ((millis() - last_flash_millis) > blink_delays[i]) {
             gpio_toggle(PORT_LED, PIN_LED0);
