@@ -88,8 +88,10 @@ int main(void) {
         if (button_pressed && button_armed) {
             // disarm button (until button is released)
             button_armed = 0;
+
             // make LED blink faster
             i = (i + 1) % 3;
+
             // PA{0-2} high to represent blink speed
             gpio_clear(GPIOA, GPIO0 | GPIO1 | GPIO2);
             switch (i) {
@@ -107,11 +109,7 @@ int main(void) {
             usart_send_blocking(USART1, (char) (i + 48));
             usart_send_blocking(USART1, '\r');
             usart_send_blocking(USART1, '\n');
-        } else if (button_pressed && !button_armed) {
-            // do nothing
-        } else {
-            // button not pressed, button not armed
-            // re-arm button
+        } else if (!button_pressed) {
             button_armed = 1;
         }
 
