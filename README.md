@@ -1,6 +1,8 @@
 # stm32_f0_basic
 Small, bare-bones STM32F0 board
 
+Designed for STM32F031K6. Most likely works for other MCUs as well.
+
 Created as a test before making a bigger board. If it's useful on its own, even better.
 
 ![layout](img/stm32f0_layout.png)
